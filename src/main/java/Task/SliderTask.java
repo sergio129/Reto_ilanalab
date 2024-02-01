@@ -10,9 +10,9 @@ import net.serenitybdd.screenplay.actions.MoveMouse;
 
 @AllArgsConstructor
 public class SliderTask implements Task {
-    private String valor;
+    private int valor;
 
-    public static SliderTask datos(String valor) {
+    public static SliderTask datos(int valor) {
         return new SliderTask(valor);
     }
 

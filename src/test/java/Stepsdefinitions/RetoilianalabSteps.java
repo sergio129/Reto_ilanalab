@@ -69,10 +69,9 @@ public class RetoilianalabSteps {
 
     }
 
-    @Then("Arrastramos hara la posicion {string} verifica que el númere mostrado el correcto")
-    public void arrastramosHaraLaPosicionVerificaQueElNúmereMostradoElCorrecto(String arg0) {
+
+    @Then("Arrastramos hasta la posicion {int} verifica que el númere mostrado el correcto")
+    public void arrastramosHastaLaPosicionVerificaQueElNúmereMostradoElCorrecto(int arg0) {
         actor.attemptsTo(SliderTask.datos(arg0));
     }
-
-
 }

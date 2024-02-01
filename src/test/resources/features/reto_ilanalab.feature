@@ -16,5 +16,5 @@ Feature: interactuar y llenar los datos del formulario
   @Caso3
   Scenario: Verificar la funcionalidad del carrusel
     When : Navegamos hasta la opcions de Slider
-    Then Arrastramos hara la posicion "3" verifica que el númere mostrado el correcto
+    Then Arrastramos hasta la posicion 9 verifica que el númere mostrado el correcto
 
