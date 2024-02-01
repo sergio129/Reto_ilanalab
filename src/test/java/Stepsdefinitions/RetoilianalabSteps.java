@@ -1,11 +1,10 @@
 package Stepsdefinitions;
 
 import Interface.DemoqaPage;
+import Model.LinksModel;
 import Model.PracticeFormModel;
-import Task.EnviarFormTask;
-import Task.PracticeFormTask;
+import Task.*;
 import Utilities.Leerdatos;
-import Task.FormmTask;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -23,6 +22,7 @@ public class RetoilianalabSteps {
     private final Actor actor = Actor.named("Usuario");
     DemoqaPage demo = new DemoqaPage();
     PracticeFormModel model = Leerdatos.datosForm();
+    LinksModel linksModel = Leerdatos.datoslink();
 
     @Before
     public void setUp() {
@@ -50,4 +50,14 @@ public class RetoilianalabSteps {
         actor.attemptsTo(EnviarFormTask.verf(model));
     }
 
+    @When(": Navegamos hasta la opcions de Links")
+    public void navegamosHastaLaOpcionsDeLinks() {
+        actor.attemptsTo(ElemntsTask.datos());
+
+    }
+
+    @Then("hacemos click  en los enlaces, validamos el contenido")
+    public void hacemosClickEnLosEnlacesValidamosElContenido() {
+        actor.attemptsTo(ElementLinksTask.datos(linksModel));
+    }
 }

@@ -1,5 +1,6 @@
 package Utilities;
 
+import Model.LinksModel;
 import Model.PracticeFormModel;
 
 
@@ -30,4 +31,15 @@ public class Leerdatos {
         return modeform;
     }
 
+    public static LinksModel datoslink() {
+        LinksModel linksModel = new LinksModel();
+        linksModel.setCreated(Leerdatos.getTestLeerDatos("demoqa.Created"));
+        linksModel.setNoContent(Leerdatos.getTestLeerDatos("demoqa.No_Content"));
+        linksModel.setMoved(Leerdatos.getTestLeerDatos("demoqa.Moved"));
+        linksModel.setBadRequest(Leerdatos.getTestLeerDatos("demoqa.Bad_Request"));
+        linksModel.setUnauthorized(Leerdatos.getTestLeerDatos("demoqa.Unauthorized"));
+        linksModel.setForbidden(Leerdatos.getTestLeerDatos("demoqa.Forbidden"));
+        linksModel.setNotFound(Leerdatos.getTestLeerDatos("demoqa.Not_Found"));
+        return linksModel;
+    }
 }

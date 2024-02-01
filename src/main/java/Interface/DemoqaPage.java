@@ -18,6 +18,16 @@ public class DemoqaPage extends PageObject {
     public static final Target Capturar_informacion = Target.the("Capturamos el texto que se envio el formulario").located(By.xpath("//div[@class='modal-title h4'][@id='example-modal-sizes-title-lg']"));
     public static final Target Envio_formulario = Target.the("Capturamos el texto que se envio el formulario").located(By.xpath("//button[@id='submit']"));
     public static final Target boton_cerrar_modal = Target.the("Boton para cerrar la modal del envio del formulario").located(By.id("closeLargeModal"));
-
+    public static final Target Opcion_elemnts = Target.the("Opcion para ingresar a los element").locatedBy("//div[@class='card mt-4 top-card']//div[@class='card-body']//h5[contains(text(),'Elements')]");
+    public static final Target Opcion_link = Target.the("ingresar a la opcion de links").locatedBy("//div[@class='element-list collapse show']//ul[@class='menu-list']/li[@class='btn btn-light '][@id='item-5']");
+    public static final Target Capturar_texto_link = Target.the("capturar el texto de validacion de cada links").located(By.id("linkResponse"));
+    public static final Target Link_Created = Target.the("opcion link create").located(By.id("created"));
+    public static final Target Created = Target.the("opcion link create").located(By.id("created"));
+    public static final Target NoContent = Target.the("opcion link No Content").located(By.id("no-content"));
+    public static final Target Moved = Target.the("opcion link Moved").located(By.id("moved"));
+    public static final Target BadRequest = Target.the("opcion link Bad Request").located(By.id("bad-request"));
+    public static final Target Unauthorized = Target.the("opcion link Unauthorized").located(By.id("unauthorized"));
+    public static final Target Forbidden = Target.the("opcion link Forbidden").located(By.id("forbidden"));
+    public static final Target Not_Found = Target.the("opcion link Not Found").located(By.id("invalid-url"));
 
 }

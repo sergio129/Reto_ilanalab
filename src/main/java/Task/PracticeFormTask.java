@@ -3,12 +3,12 @@ package Task;
 import Model.PracticeFormModel;
 import lombok.AllArgsConstructor;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Interaction;
 import Interaction.PracticeFormInteraction;
+import net.serenitybdd.screenplay.Task;
 
 
 @AllArgsConstructor
-public class PracticeFormTask implements Interaction {
+public class PracticeFormTask implements Task {
     private final PracticeFormModel model;
 
     public static PracticeFormTask datos(PracticeFormModel model) {
