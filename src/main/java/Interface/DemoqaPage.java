@@ -29,5 +29,10 @@ public class DemoqaPage extends PageObject {
     public static final Target Unauthorized = Target.the("opcion link Unauthorized").located(By.id("unauthorized"));
     public static final Target Forbidden = Target.the("opcion link Forbidden").located(By.id("forbidden"));
     public static final Target Not_Found = Target.the("opcion link Not Found").located(By.id("invalid-url"));
+    public static final Target Opcion_Widgets = Target.the("Opcion para ingresar a los Widgets").locatedBy("//div[@class='card mt-4 top-card']//div[@class='card-body']//h5[contains(text(),'Widgets')]");
+    public static final Target Opcion_Widgets_Slider = Target.the("Opcion para ingresar a Widgets Slider").locatedBy("/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[4]/div/ul/li[4]/span");
+    public static final Target Slider = Target.the("seleccionar valor slider").locatedBy("//input[@type=\"range\"][@value=\"{0}\"]");
+    public static final Target Verficar_valor_Slider = Target.the("verificar valor del Slider").located(By.id("sliderValue"));
+
 
 }

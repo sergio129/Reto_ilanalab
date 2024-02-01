@@ -13,5 +13,8 @@ Feature: interactuar y llenar los datos del formulario
     Scenario: Verificar la funcionalidad de los enlaces
       When : Navegamos hasta la opcions de Links
       Then hacemos click  en los enlaces, validamos el contenido
-
+  @Caso3
+  Scenario: Verificar la funcionalidad del carrusel
+    When : Navegamos hasta la opcions de Slider
+    Then Arrastramos hara la posicion "3" verifica que el númere mostrado el correcto
 

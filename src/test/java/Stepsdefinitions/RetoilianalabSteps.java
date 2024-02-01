@@ -1,5 +1,7 @@
 package Stepsdefinitions;
 
+import Interaction.SliderInteraction;
+import Interaction.WidgetsSliderInteraction;
 import Interface.DemoqaPage;
 import Model.LinksModel;
 import Model.PracticeFormModel;
@@ -60,4 +62,17 @@ public class RetoilianalabSteps {
     public void hacemosClickEnLosEnlacesValidamosElContenido() {
         actor.attemptsTo(ElementLinksTask.datos(linksModel));
     }
+
+    @When(": Navegamos hasta la opcions de Slider")
+    public void navegamosHastaLaOpcionsDeSlider() {
+        actor.attemptsTo(WidgetsSliderInteraction.datos());
+
+    }
+
+    @Then("Arrastramos hara la posicion {string} verifica que el númere mostrado el correcto")
+    public void arrastramosHaraLaPosicionVerificaQueElNúmereMostradoElCorrecto(String arg0) {
+        actor.attemptsTo(SliderTask.datos(arg0));
+    }
+
+
 }

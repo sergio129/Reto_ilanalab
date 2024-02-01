@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         plugin = {"rerun:target/rerunFailed/fallidos.txt"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@Caso2",
+        tags = "@Caso3",
         monochrome = true
 
 )
